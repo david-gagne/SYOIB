@@ -1,0 +1,169 @@
+body {
+  margin: 0 auto;
+  width: 100vw;
+  background-color: #E0E0E0;
+  overflow: hidden;
+}
+.navigation {
+  width: 100vw;
+  background-color: #303F9F;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 10px 6px -8px #777;
+}
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  margin: auto;
+}
+.mainContent {
+  background-color: #E0E0E0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+.about {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  justify-content: center;
+  position: absolute;
+  top: 3.5rem;
+  right: 1rem;
+}
+.about a {
+  margin: auto;
+}
+.fa-question-circle-o:before {
+  color: #303F9F;
+  font-size: 35px;
+  margin: auto;
+}
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60rem;
+  height: 60rem;
+  margin: 6rem auto;
+}
+/* Begin general styling for card child elements.*/
+.cardTitle {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #3F51B5;
+  text-decoration: underline;
+}
+.cardDescription {
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #303F9F;
+}
+.valueLinks {
+  font-size: 1rem;
+}
+.valueLinks a {
+  text-decoration: none;
+  line-height: 2rem;
+  font-family: sans-serif;
+  color: #9E9E9E;
+  font-weight: bold;
+}
+.valueLinks a:hover {
+  color: #757575;
+}
+.valueLinks a:active {
+  color: #757575;
+  text-decoration: underline;
+}
+/*End general styling for card child elements.*/
+.breakEvenAnalysis {
+  margin-left: 10rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 17rem;
+  height: 21rem;
+  padding: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 6px -8px #777;
+}
+.breakEvenAnalysis:hover {
+  box-shadow: 0 10px 30px -8px #777;
+}
+.valueLinks #fixedCost {
+  margin-right: 2rem;
+}
+.valueLinks #revenue {
+  margin-right: 2rem;
+}
+.valueLinks #variableCost {
+  margin-right: 2rem;
+}
+.businessModeling {
+  margin-right: 10rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 17rem;
+  height: 21rem;
+  padding: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 6px -8px #777;
+}
+.businessModeling:hover {
+  box-shadow: 0 10px 30px -8px #777;
+}
+.valueLinks #popularModels {
+  margin-right: 1rem;
+}
+.valueLinks #marketAnalysis {
+  margin-right: 2rem;
+}
+.valueLinks #ROI {
+  margin-right: 2rem;
+}
+.valueLinks #methodologies {
+  margin-right: 2rem;
+}
+.marginCalculator {
+  margin-top: -11.7rem;
+  margin-left: 10rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 17rem;
+  height: 21rem;
+  padding: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 6px -8px #777;
+}
+.marginCalculator:hover {
+  box-shadow: 0 10px 30px -8px #777;
+}
+.valueLinks #margins {
+  margin-right: 2rem;
+}
+.targetSalesCostOptimization {
+  margin-top: -11.7rem;
+  margin-right: 10rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  width: 17rem;
+  height: 21rem;
+  padding: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 6px -8px #777;
+}
+.targetSalesCostOptimization .cardTitle {
+  font-size: 0.9rem;
+}
+.targetSalesCostOptimization:hover {
+  box-shadow: 0 10px 30px -8px #777;
+}
