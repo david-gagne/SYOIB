@@ -69,7 +69,7 @@ body {
   color: #303F9F;
 }
 .valueLinks {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .valueLinks a {
   text-decoration: none;
@@ -97,7 +97,7 @@ body {
   box-shadow: 0 10px 6px -8px #777;
 }
 .breakEvenAnalysis:hover {
-  box-shadow: 0 10px 30px -8px #777;
+  box-shadow: 0 10px 6px 1px #777;
 }
 .valueLinks #fixedCost {
   margin-right: 2rem;
@@ -105,9 +105,7 @@ body {
 .valueLinks #revenue {
   margin-right: 2rem;
 }
-.valueLinks #variableCost {
-  margin-right: 2rem;
-}
+.valueLinks #variableCost {}
 .businessModeling {
   margin-right: 10rem;
   background-color: white;
@@ -119,12 +117,12 @@ body {
   box-shadow: 0 10px 6px -8px #777;
 }
 .businessModeling:hover {
-  box-shadow: 0 10px 30px -8px #777;
-}
-.valueLinks #popularModels {
-  margin-right: 1rem;
+  box-shadow: 0 10px 6px 1px #777;
 }
 .valueLinks #marketAnalysis {
+  margin-right: 2rem;
+}
+.valueLinks #popularModels {
   margin-right: 2rem;
 }
 .valueLinks #ROI {
@@ -145,7 +143,7 @@ body {
   box-shadow: 0 10px 6px -8px #777;
 }
 .marginCalculator:hover {
-  box-shadow: 0 10px 30px -8px #777;
+  box-shadow: 0 10px 6px 1px #777;
 }
 .valueLinks #margins {
   margin-right: 2rem;
@@ -165,5 +163,16 @@ body {
   font-size: 0.9rem;
 }
 .targetSalesCostOptimization:hover {
-  box-shadow: 0 10px 30px -8px #777;
+  box-shadow: 0 10px 6px 1px #777;
+}
+#breakEvenAnalysis {
+  width: 25rem;
+  height: 30rem;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem;
+  margin: auto;
+  position: relative;
+  top: -15rem;
+  box-shadow: 0 10px 6px -8px #777;
 }
