@@ -50,7 +50,7 @@ body {
   flex-wrap: wrap;
   width: 60rem;
   height: 60rem;
-  margin: 6rem auto;
+  margin: 10px auto;
 }
 /* Begin general styling for card child elements.*/
 .cardTitle {
@@ -165,14 +165,56 @@ body {
 .targetSalesCostOptimization:hover {
   box-shadow: 0 10px 6px 1px #777;
 }
-#breakEvenAnalysis {
-  width: 25rem;
-  height: 30rem;
-  background-color: white;
-  border-radius: 5px;
-  padding: 2rem;
-  margin: auto;
+/*Begin Application Forms and Feature Styling*/
+.applicationForms {
   position: relative;
-  top: -15rem;
-  box-shadow: 0 10px 6px -8px #777;
+  top: -10rem;
+  width: 40rem;
+  height: 200rem;
+  background-color: inherit;
+  border-radius: 5px;
+  margin: 25px auto;
+}
+#breakEvenAnalysis {
+  font-family: sans-serif;
+  line-height: 20px;
+  color: #303F9F;
+  width: 40rem;
+  height: 20rem;
+}
+#breakEvenAnalysis h3 {
+  width: 15rem;
+  font-weight: 400;
+  margin: 0 auto;
+}
+#breakEvenAnalysis h4 {
+  width: 30rem;
+  font-weight: 300;
+  margin: 10px auto;
+  text-align: center;
+
+}
+#breakEvenAnalysis p {
+  margin-left: 8rem;
+  font-weight: 200;
+
+}
+#breakEvenAnalysis input {
+  float: right;
+  margin-right: 100px;
+}
+#result {
+  color: #303F9F;
+  font-weight: bold;
+}
+#run {
+  display: block;
+  width: 5rem;
+  color: #303F9F;
+  margin: 0 auto;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

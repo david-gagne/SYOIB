@@ -5,7 +5,7 @@
     <meta charset="utf-8" lang="en-us">
     <meta name="description" content="Applications and resources for those planning an starting an information business">
     <meta name="author" content="David Gagne">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <!--Font Awesome-->
     <script src="https://use.fontawesome.com/adda87d809.js"></script>
   </head>
@@ -61,16 +61,21 @@
         </div>
       </div>
     </div>
-    <div id="breakEvenAnalysis">
-        <form class="fixedCostValue" action="#" method="post">
-          <h1>Fixed Cost</h1>
-          <p>Definition: A fixed cost is one that does not change with an increase or decrease in sales or services-rendered (For example: Rent, Internet, Salaries)</p>
-          
-          <input type="number" name="fixedCost">
-        </form>
+    <div class="applicationForms">
+      <div id="breakEvenAnalysis">
+        <h3>Break-even Calculator <i class="fa fa-calculator" aria-hidden="true"></i></h3>
+        <h4>Add values to each item on the form below.<br>Select <strong>Run</strong> to find your break-even point.</h4>
+        <p>Total Fixed Cost<input type="number" id="fixedCostValue" placeholder="2150.00"></input><p>
+        <p>Total Variable Cost<input type="number" id="variableCostValue" placeholder="1.68"></input></p>
+        <p>Revenue<input type="number" id="revenueValue" placeholder="49.99"></input></p>
+        <p><strong>Result:</strong><input type="number" id="result"></input></p>
+        <button id="run" onclick="breakEven()" type="button" name="button">Run</button>
+
+      </div
     </div>
   </div>
 
-  </body>
 
+  <script type="text/javascript" src="scripts.js"></script>
+  </body>
 </html>
