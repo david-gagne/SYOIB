@@ -11,3 +11,13 @@ function breakEven() {
   document.getElementById("result").value = result;
   return result;
 }
+
+// Opening about modal box follows
+var $aboutModal = document.getElementById("aboutModal");
+
+function openAbout() {
+  $aboutModal.style.display = "flex";
+}
+function closeAbout() {
+  $aboutModal.style.display = "none";
+}

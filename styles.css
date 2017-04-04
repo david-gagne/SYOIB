@@ -4,21 +4,44 @@ body {
   background-color: #E0E0E0;
   overflow: hidden;
 }
-.navigation {
-  width: 100vw;
-  background-color: #303F9F;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  box-shadow: 0 10px 6px -8px #777;
-}
-.navigation a {
+a {
   text-decoration: none;
+}
+#aboutModal {
+  /*Hero Patterns*/
+  background-color: #4a4b52;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%233f51b5' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  /*End Hero Patterns*/
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  margin: 0 auto;
+  text-align: center;
+  top: 0;
+  /*To show =  display:flex  To hide = display: none*/
+  flex-direction: column;
+  justify-content: center;
+}
+.hidden .fa-times-circle-o {
+    font-size: 40px;
+    color: white;
+    margin: auto;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+.hidden .fa-times-circle-o:hover {
+  color: grey;
+}
+#modalContent {
+  font-size: 20px;
+  font-family: 'Archivo Narrow', sans-serif;
   color: white;
-  font-family: sans-serif;
-  letter-spacing: 1px;
-  margin: auto;
+  letter-spacing: 3px;
+}
+#github {
+  color: magenta;
 }
 .mainContent {
   background-color: #E0E0E0;
@@ -39,10 +62,15 @@ body {
 .about a {
   margin: auto;
 }
-.fa-question-circle-o:before {
+.about .fa-question-circle-o {
   color: #303F9F;
   font-size: 35px;
   margin: auto;
+  position: relative;
+  top: -40px;
+}
+.about .fa-question-circle-o:hover {
+  color: white;
 }
 .cardContainer {
   display: flex;
@@ -50,7 +78,7 @@ body {
   flex-wrap: wrap;
   width: 60rem;
   height: 60rem;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 /* Begin general styling for card child elements.*/
 .cardTitle {
@@ -100,12 +128,35 @@ body {
   box-shadow: 0 10px 6px 1px #777;
 }
 .valueLinks #fixedCost {
-  margin-right: 2rem;
+
 }
 .valueLinks #revenue {
-  margin-right: 2rem;
+  margin: 0.5rem;
 }
-.valueLinks #variableCost {}
+.valueLinks #variableCost {
+
+}
+.breakEvenAnalysis .fa-calculator {
+  color: #303F9F;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 1rem;
+}
+.breakEvenAnalysis .fa-external-link {
+  color: #64B5F6;
+  font-size: 11px;
+  position: relative;
+  top: -3px;
+  margin: 2px;
+}
+#appCTA {
+  color: #303F9F;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
 .businessModeling {
   margin-right: 10rem;
   background-color: white;
@@ -166,14 +217,14 @@ body {
   box-shadow: 0 10px 6px 1px #777;
 }
 /*Begin Application Forms and Feature Styling*/
-.applicationForms {
-  position: relative;
+#applicationForms {
+  position: static;
   top: -10rem;
   width: 40rem;
   height: 200rem;
   background-color: inherit;
   border-radius: 5px;
-  margin: 25px auto;
+  margin: -150px auto;
 }
 #breakEvenAnalysis {
   font-family: sans-serif;

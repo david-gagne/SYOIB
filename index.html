@@ -8,25 +8,37 @@
     <link rel="stylesheet" href="styles.css">
     <!--Font Awesome-->
     <script src="https://use.fontawesome.com/adda87d809.js"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
   </head>
   <body>
-    <div class="navigation">
-        <a href="#">SYOIB</a>
-    </div>
     <div class="mainContent">
       <div class="about">
-        <a href="#"><i class="fa fa-question-circle-o" aria-hidden="true" title="About SYOIB (Esc)"></i></a>
+        <i onclick="openAbout()" class="fa fa-question-circle-o" aria-hidden="true" title="About SYOIB (spacebar)"></i>
+      </div>
+      <br>
+      <br>
+      <div id="aboutModal" class="hidden">
+        <i onclick="closeAbout()" class="fa fa-times-circle-o" aria-hidden="true"></i>
+        <div id="modalContent">
+          <h3>Start your own information business | SYOIB</h3>
+          <h5>Concept, design, and code by David Gagne.</h5>
+          <h5>Fork this project on <a id="github" href="https://github.com/david-gagne/syoib">GitHub</a>.</h5>
+        </div>
       </div>
       <div class="cardContainer">
         <div class="breakEvenAnalysis">
           <h2 class="cardTitle">Break-even Analysis</h2>
-          <p class="cardDescription">This is a powerful calculation that will enable you to quickly determine the viability of your information business model.</p>
-          <p class="cardDescription">Click on a value to get started.</p>
+          <p class="cardDescription">This is a powerful calculation that will enable you to quickly determine the financial viability of your information business model.</p>
+          <p class="cardDescription">Click an item to get more information.</p>
           <div class="valueLinks">
-            <a id="fixedCost" href="#">Fixed Cost</a>
-            <a id="revenue" href="#">Revenue</a><br>
-            <a id="variableCost" href="#">Variable Cost</a>
+            <a id="fixedCost" target="_blank" href="https://en.wikipedia.org/wiki/Fixed_cost">Fixed Cost<i class="fa fa-external-link" aria-hidden="true"></i></a>
+            <a id="revenue" target="_blank" href="https://en.wikipedia.org/wiki/Price">Price<i class="fa fa-external-link" aria-hidden="true"></i></a>
+            <a id="variableCost" target="blank" href="https://en.wikipedia.org/wiki/Variable_cost">Variable Cost<i class="fa fa-external-link" aria-hidden="true"></i></a>
           </div>
+          <p id="appCTA">Click the calculator to find yours.</p>
+          <a href="#breakEvenAnalysis"><i class="fa fa-calculator" aria-hidden="true"></i>
+          </a>
         </div>
         <div class="businessModeling">
           <h2 class="cardTitle">Business Modeling</h2>
@@ -61,17 +73,17 @@
         </div>
       </div>
     </div>
-    <div class="applicationForms">
+    <div id="applicationForms">
       <div id="breakEvenAnalysis">
+        <br><br><br> <!--Ghetto separation on page for href-->
         <h3>Break-even Calculator <i class="fa fa-calculator" aria-hidden="true"></i></h3>
         <h4>Add values to each item on the form below.<br>Select <strong>Run</strong> to find your break-even point.</h4>
         <p>Total Fixed Cost<input type="number" id="fixedCostValue" placeholder="2150.00"></input><p>
         <p>Total Variable Cost<input type="number" id="variableCostValue" placeholder="1.68"></input></p>
-        <p>Revenue<input type="number" id="revenueValue" placeholder="49.99"></input></p>
+        <p>Price<input type="number" id="revenueValue" placeholder="49.99"></input></p>
         <p><strong>Result:</strong><input type="number" id="result"></input></p>
         <button id="run" onclick="breakEven()" type="button" name="button">Run</button>
-
-      </div
+      </div>
     </div>
   </div>
 
