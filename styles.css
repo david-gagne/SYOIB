@@ -19,9 +19,9 @@ a {
   margin: 0 auto;
   text-align: center;
   top: 0;
-  /*To show =  display:flex  To hide = display: none*/
   flex-direction: column;
   justify-content: center;
+  display: none;
 }
 .hidden .fa-times-circle-o {
     font-size: 40px;

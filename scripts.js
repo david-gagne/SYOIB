@@ -12,8 +12,9 @@ function breakEven() {
   return result;
 }
 
-// Opening about modal box follows
+// Opening and closing about modal box follows
 var $aboutModal = document.getElementById("aboutModal");
+$aboutModal.style.display = "none";
 
 function openAbout() {
   $aboutModal.style.display = "flex";
